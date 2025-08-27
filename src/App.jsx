@@ -49,13 +49,16 @@ function App() {
 
   const handleEdit = (index) => {
     setForm(todos[index]); // Load data ke form
-    setEditIndex(index);   // Simpan index item yang diedit
+    setEditIndex(index); // Simpan index item yang diedit
   };
 
   return (
     <>
+      <header className="px-3 lg:px-0 w-full">
         <Opening text="To do List" />
-      <main className="text-center flex flex-col gap-8 max-w-[540px] w-full mx-auto">
+      </header>
+
+      <main className="text-center flex flex-col gap-8 max-w-[540px] w-full mx-auto px-3 lg:px-0">
         <div className="flex flex-col gap-4 bg-white p-8 lg:p-8 lg:py-5 w-full rounded-b-xl shadow-lg">
           <div className="w-full flex flex-col gap-3">
             <Input
@@ -101,7 +104,9 @@ function App() {
           ))}
         </div>
       </main>
+      <footer className="px-3 lg:px-0 w-full">
         <Closing text="Copyright © 2025" />
+      </footer>
     </>
   );
 }
