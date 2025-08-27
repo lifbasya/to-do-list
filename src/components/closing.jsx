@@ -1,8 +1,15 @@
 function Closing({ text }) {
   return (
-    <header className="bg-blue-500 text-white text-center pt-28 pb-10 -mt-18 text-3xl font-bold">
-      {text}
-    </header>
+    <footer className="text-[#96A0A5] flex max-w-[540px] justify-between mx-auto text-sm font-bold mt-4">
+      <h3>{text}</h3>
+      <div>
+        <img
+          src="/github.svg"
+          alt="Logo Github"
+          className="w-5"
+        />
+      </div>
+    </footer>
   );
 }
 

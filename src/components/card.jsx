@@ -17,12 +17,12 @@ function Card({ title, desc, status, onEdit, onDelete }) {
       "
     >
       <div className="flex flex-col gap-0.5">
-        <h3 className="font-medium text-lg">{title}</h3>
+        <h3 className="font-medium text-base">{title}</h3>
         <div className="flex flex-col gap-3">
           <p className="text-sm text-gray-600">{desc}</p>
           {/* Badge Status */}
           <p
-            className={`text-sm px-3 py-1 rounded-full font-medium w-fit ${
+            className={`text-xs px-3 py-1 rounded-full font-medium w-fit ${
               statusColors[status] || "bg-gray-100 text-gray-600"
             }`}
           >

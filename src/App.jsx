@@ -54,12 +54,10 @@ function App() {
 
   return (
     <>
-      <header>
         <Opening text="To do List" />
-      </header>
-      <main className="text-center flex flex-col gap-8 max-w-[700px] -mt-18 w-full mx-auto px-3 lg:px-0">
-        <div className="flex flex-col gap-6 bg-white p-8 lg:p-10 w-full rounded-xl shadow-lg">
-          <div className="w-full flex flex-col gap-4">
+      <main className="text-center flex flex-col gap-8 max-w-[540px] w-full mx-auto">
+        <div className="flex flex-col gap-4 bg-white p-8 lg:p-8 lg:py-5 w-full rounded-b-xl shadow-lg">
+          <div className="w-full flex flex-col gap-3">
             <Input
               label="Judul"
               name="title"
@@ -90,7 +88,7 @@ function App() {
         </div>
 
         {/* Card List */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2  gap-4">
           {todos.map((todo, i) => (
             <Card
               key={i}
@@ -103,9 +101,7 @@ function App() {
           ))}
         </div>
       </main>
-      <footer>
-        <Closing text="Copyright 2025" />
-      </footer>
+        <Closing text="Copyright © 2025" />
     </>
   );
 }

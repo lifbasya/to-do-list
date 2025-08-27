@@ -1,5 +1,5 @@
 export default function Button({ children, onClick, type = "button", variant = "primary" }) {
-  const base = "px-4 py-3 rounded-lg text-white text-lg font-medium transition-colors cursor-pointer";
+  const base = "px-4 py-3 rounded-lg text-white text-base font-medium transition-colors cursor-pointer";
   const styles = {
     primary: "bg-blue-500 hover:bg-blue-600",
     success: "bg-green-500 hover:bg-green-600",
